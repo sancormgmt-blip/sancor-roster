@@ -16,9 +16,9 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 /* HEADER */
 .hero{padding:36px 0 24px;text-align:center;background:linear-gradient(180deg,#10101a 0%,#0b0b10 100%)}
 .hero img{width:140px;margin-bottom:6px;filter:invert(1);opacity:0.85}
-.hero .tag{font-size:9px;letter-spacing:6px;text-transform:uppercase;color:#c9a84c;font-weight:600;opacity:0.6;margin-bottom:16px}
+.hero .tag{font-size:12px;letter-spacing:6px;text-transform:uppercase;color:#c9a84c;font-weight:600;opacity:0.6;margin-bottom:16px}
 .hero h1{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;font-style:italic;color:#aaa;margin-bottom:8px}
-.hero .note{font-size:10px;color:#444;letter-spacing:1px}
+.hero .note{font-size:12px;color:#444;letter-spacing:1px}
 
 /* STICKY BAR */
 .bar{position:sticky;top:0;z-index:10;background:rgba(11,11,16,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:10px 0 0;border-bottom:1px solid rgba(255,255,255,0.05)}
@@ -29,7 +29,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .sx{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:#555;font-size:20px;padding:8px;display:none}
 .tabs{display:flex;gap:6px;padding:0 20px 10px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .tabs::-webkit-scrollbar{display:none}
-.tb{flex-shrink:0;padding:7px 14px;border-radius:100px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);color:#666;font-size:11px;font-weight:700;white-space:nowrap;min-height:36px;display:flex;align-items:center;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.25s}
+.tb{flex-shrink:0;padding:9px 14px;border-radius:100px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);color:#666;font-size:12px;font-weight:700;white-space:nowrap;min-height:44px;display:flex;align-items:center;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.25s}
 .tb.on{background:#c9a84c;color:#000;border-color:#c9a84c}
 .tb:active{transform:scale(0.93)}
 .sc{font-size:11px;color:#555;text-align:center;padding:6px 0;display:none}
@@ -38,7 +38,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .sec{padding:28px 0 12px;margin-bottom:8px}
 .sh{display:flex;align-items:center;gap:10px;margin:0 20px 16px;padding-bottom:12px;border-bottom:2px solid rgba(255,255,255,0.04)}
 .sh h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:800}
-.sh .fl{font-size:9px;color:#444;font-weight:600;letter-spacing:2px;margin-left:auto;text-transform:uppercase}
+.sh .fl{font-size:12px;color:#444;font-weight:600;letter-spacing:2px;margin-left:auto;text-transform:uppercase}
 .sh .cnt{font-size:11px;color:#333;font-weight:600;margin-left:auto}
 
 /* ELITE CAROUSEL */
@@ -47,7 +47,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .carousel .ecard{flex-shrink:0;width:200px;padding:24px 20px;border-radius:16px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:flex-end;min-height:100px;position:relative;overflow:hidden;transition:transform 0.2s}
 .carousel .ecard:active{transform:scale(0.96)}
 .carousel .ecard .name{font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:4px;position:relative;z-index:1}
-.carousel .ecard .sub{font-size:10px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;position:relative;z-index:1}
+.carousel .ecard .sub{font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;position:relative;z-index:1}
 
 /* Elite card colors — each unique */
 .ecard.c1{background:linear-gradient(135deg,#1a1528,#251a35)}
@@ -59,10 +59,11 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 
 /* TIER */
 .tier{margin:0 20px 16px}
-.tl{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:5px 12px;border-radius:100px;margin-bottom:10px}
+.tier:has(.carousel){margin:0 0 16px}
+.tl{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;padding:5px 12px;border-radius:100px;margin-bottom:10px}
 .tl.gold{background:rgba(201,168,76,0.1);color:#c9a84c}
 .tl.silver{background:rgba(255,255,255,0.05);color:#888}
-.tl.dim{background:rgba(255,255,255,0.03);color:#555}
+.tl.dim{background:rgba(255,255,255,0.03);color:#777}
 
 /* GRID */
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
@@ -76,7 +77,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .tier.mid .card{color:#aaa;background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.04)}
 .tier.lo .card{font-size:13px;color:#777;background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.03);min-height:46px;padding:12px 8px}
 .tier.lo .grid{grid-template-columns:repeat(3,1fr);gap:4px}
-.tier.xs .card{font-size:12px;color:#555;background:transparent;border-color:rgba(255,255,255,0.025);min-height:40px;padding:10px 6px}
+.tier.xs .card{font-size:12px;color:#666;background:transparent;border-color:rgba(255,255,255,0.025);min-height:44px;padding:12px 6px}
 .tier.xs .grid{grid-template-columns:repeat(3,1fr);gap:3px}
 
 /* CTA */
@@ -91,7 +92,7 @@ button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .ftr .links a:active{color:#c9a84c}
 .ftr .wa{display:inline-flex;padding:14px 32px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.2);color:#25d366;border-radius:14px;font-weight:700;font-size:13px;min-height:48px;align-items:center;transition:all 0.2s}
 .ftr .wa:active{background:rgba(37,211,102,0.2)}
-.ftr .legal{font-size:9px;color:#2a2a2a;max-width:260px;margin:24px auto 0;line-height:2}
+.ftr .legal{font-size:12px;color:#2a2a2a;max-width:260px;margin:24px auto 0;line-height:2}
 
 /* FLOAT WA */
 .fw{position:fixed;bottom:24px;right:20px;width:52px;height:52px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;z-index:20;box-shadow:0 4px 20px rgba(37,211,102,0.3)}
